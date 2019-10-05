@@ -38,6 +38,7 @@
     section {display: inline-block;
         max-width: 33%;
         background-color: rgb(73, 73, 73);
+        vertical-align: top;
     }
 
     body {
