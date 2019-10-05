@@ -1,2 +1,70 @@
 @media only screen and (min-width: width 32.5em) {
     h1 {font-size:4em;}
+    
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 0.8rem
+        }
+
+    h1 {
+        text-align:center;
+        color: white;
+        padding: 5px;
+        font-family: 'Shadows Into Light Two', cursive, Arial, Helvetica, sans-serif;
+        margin-bottom:30px;
+        line-height:2em;
+        font-size:2em;
+      }
+
+      h2 {
+        text-align:center;
+        color: white;
+        padding: 5px;
+        font-family: 'Shadows Into Light Two', cursive, Arial, Helvetica, sans-serif;
+        line-height:1em;
+        font-size:1em;
+      }
+    
+    #screenshot {
+          margin-left:2em;
+          padding-right:.5em;
+          padding-top:.4em;
+          float: center;
+          }
+    
+    body {
+      font-size: 20px;
+      line-height: 32px;
+      font-family:  'Noto Sans SC', sans-serif;
+      background:rgb(182, 181, 181);
+      color:rgb(71, 107, 29);
+      }
+    
+    header,footer {background:rgb(7, 26, 54);
+        width:100%;
+        text-align: center;
+        border-radius: 10px;
+      }
+    
+    .middle{
+      margin-left: 5em;
+    }
+    
+    p{text-align:center;
+      color:rgb(156, 154, 154);
+      padding: 1em;
+      font-family: 'Shadows Into Light Two', cursive;
+      margin-bottom: 30px;
+      line-height:1.1em;
+      font-size: 1em;
+      color:white;}
+    
+    a:link {color:rgb(38, 39, 38);}
+    a:visited {color:white;}
+
+    section{display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 0.8rem;
+        grid-template-columns: "section";
+        }
