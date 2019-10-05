@@ -1,11 +1,17 @@
   
-    .col {
+    .grid-item {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 50px;
         background-color:rgb(7, 26, 54);
         font-size: 0.8rem
         }
+
+    .grid-container {display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color:rgb(7, 26, 54);
+        padding: 10px;
+    }
 
     h1 {
         text-align:center;
@@ -30,7 +36,6 @@
           margin-left:2em;
           padding-right:.5em;
           padding-top:.4em;
-          float: center;
           }
     
     body {
@@ -47,11 +52,8 @@
         border-radius: 10px;
       }
     
-    .middle{
-      margin-left: 5em;
-    }
     
-    p{text-align:center;
+    p {text-align:center;
       color:rgb(156, 154, 154);
       padding: 1em;
       font-family: 'Shadows Into Light Two', cursive;
