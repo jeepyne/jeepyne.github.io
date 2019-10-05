@@ -17,10 +17,9 @@
         font-size:1em;
       }
     
-    #screenshot {
-          margin-left:1em;
-          padding-right:.2em;
-          padding-top:.2em;
+    .screenshot {
+          max-width: 100%;
+          height: auto;
           }
     .top {background:rgb(7, 26, 54);
         width:100%;
