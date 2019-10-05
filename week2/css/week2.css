@@ -4,30 +4,40 @@
         padding: 5px;
         font-family: 'Shadows Into Light Two', cursive, Arial, Helvetica, sans-serif;
         margin-bottom:30px;
-        line-height:2em;
-        font-size:2em;
+        line-height:4.1em;
+        font-size:4em;
         background:rgb(7, 26, 54);
       }
 
       h2 {
         text-align:center;
         color: white;
-        padding: 5px;
-        font-family: 'Shadows Into Light Two', cursive, Arial, Helvetica, sans-serif;
+        font-family: 'Noto Sans SC', sans-serif;
+        line-height:2.1em;
+        font-size:2em;
+      }
+
+      h3{
+        text-align:center;
+        color: rgb(71, 107, 29);
+         font-family: 'Noto Sans SC', sans-serif;
         line-height:3.1em;
         font-size:3em;
       }
     
     .screenshot {
-          max-width: 50%;
+          max-width: 20%;
           height: auto;
           display: block;
           }
+
     .top {background:rgb(7, 26, 54);
         width:100%;
           }
 
-    section {display: inline;}
+    section {display: inline;
+    background-color: rgb(73, 73, 73);
+    }
 
     body {
       font-size: 20px;
