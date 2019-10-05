@@ -6,6 +6,7 @@
         margin-bottom:30px;
         line-height:2em;
         font-size:2em;
+        background:rgb(7, 26, 54);
       }
 
       h2 {
@@ -18,8 +19,9 @@
       }
     
     .screenshot {
-          max-width: 100%;
+          max-width: 50%;
           height: auto;
+          display: block;
           }
     .top {background:rgb(7, 26, 54);
         width:100%;
