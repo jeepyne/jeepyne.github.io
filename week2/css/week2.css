@@ -1,6 +1,4 @@
-@media only screen and (min-width: width 32.5em) {
-    h1 {font-size:4em;}
-    
+  
     .col {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
