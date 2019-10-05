@@ -1,9 +1,11 @@
 @media only screen and (min-width: width 32.5em) {
     h1 {font-size:4em;}
     
-    main{
+    .col {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 50px;
+        background-color:rgb(7, 26, 54);
         font-size: 0.8rem
         }
 
@@ -62,9 +64,3 @@
     
     a:link {color:rgb(38, 39, 38);}
     a:visited {color:white;}
-
-    section{display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        font-size: 0.8rem;
-        grid-template-columns: "section";
-        }
