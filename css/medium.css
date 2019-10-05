@@ -1,0 +1,7 @@
+@media only screen and (min-width: width 32.5em) {
+    h1 {font-size:4em;}
+    #profile {
+               float: right;
+        }
+
+  }
