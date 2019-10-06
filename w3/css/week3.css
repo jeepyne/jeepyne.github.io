@@ -19,6 +19,8 @@ header{background:#1e8299;
     font-size: 15em;
     line-height: 1em;
 }
+a{color:#fcd574;
+    text-decoration: none;}
 
 h2{
     text-align: left;
@@ -48,8 +50,8 @@ margin:5px;
 padding:2px;
 }
 
-picture {
-    max-height: 10em;}
+picture{margin:4em;
+}
 
 p {text-align:cleft;
     color:#083047;
