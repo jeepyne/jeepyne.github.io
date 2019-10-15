@@ -1,4 +1,10 @@
 @media only screen and (max-width: 700px) {
     main, footer{width:95%;
                 margin:auto;}
+                
+    .navigation {display:flex;}
+    .navigation.li:first-child {display: none;}
+    .navigation.li {display: block;
+        flex: 1 1 100%;}
+    .navigation li a {color:rgb(87, 84, 84)}  
             }
