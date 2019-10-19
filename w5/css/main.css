@@ -1,12 +1,14 @@
 header{background:#1e8299;
     max-width: 100%;
     font-family: 'Lato', sans-serif;
-    font-size: 1em;
     color:#fcd574;
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 0px;
     justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1%;
   }
 
 .logo{width:100px;
@@ -15,7 +17,7 @@ header{background:#1e8299;
 h1{
     color:#fcd574;
     font-family: 'Pacifico', cursive;
-    margin-left: 2em;
+    margin: auto;
 }
 
 a {color:#fcd574;
@@ -27,13 +29,13 @@ a {color:#fcd574;
 
 h2{
     text-align: left;
-    color:#083047;
+    color: rgb(161, 161, 161);
     font-size: 2em;
     font-family: 'Pacifico', cursive;
     margin-left: .5em;
 }
 
-#catch {font-size:.1em;
+#catch {font-size:.5em;
     color: white;
     text-align: center;
     }
