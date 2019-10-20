@@ -30,7 +30,7 @@ body{
   color:rgb(71, 107, 29);
   }
 
-.top {background:rgb(7, 26, 54);
+header, footer {background:rgb(7, 26, 54);
     width:100%;
   }
 
