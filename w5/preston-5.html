@@ -18,6 +18,7 @@
 
 </head>
 <body>
+    <div id= "pancakes"></div>
     <header>
         <img class = "logo" src = "images/iconfinder_icon-8-cloud-sun-snow_315949.png"
         alt="Sun or Snow Logo">
@@ -41,10 +42,30 @@
         <main>
             <h2>Preston, Idaho</h2>
             <section id=minfo>
-                <div class="content">Weather Summary</div>
-                <div class="content">5 day Forecast</div> 
-                <div class="content">Article</div>
-                <div class="content">Contact Information</div>
+                <div class="hero">
+                    <img src="images/bluesky.jpg" alt="blue sky">
+                <section class="content box summary"><h3>Weather Summary</h3>
+                <p>Currently:<span id="currently">Sunny</span></p>
+                <p>High: <span id="high">76</span></p>
+                <p>Wind Chill:<span id="windchill">10</span></p>
+                <p>Humidity: <span id="humidity">60%</span></p>
+                <p>Wind Speed: <span id="windspeed">5 mph</span></p>
+                </section>
+                </div>
+                
+                <div class="contentbox forecast"> <h3>5 day Forecast</h3>
+                </div> 
+                
+                <div class="contentbox article">
+                    <img id="art" src="images/beautiful-cropland-dawn-1237119.jpg" alt="cropland image">
+                    <h3>Featured article: Family Activities</h3>
+                <p>In the beautiful town of Preston, Idaho families enjoy exploring the beautiful scenery by hiking through the mountains, fishing in nearby rivers, and watching the sun set over the plains. Each season has different activities to offer. In the winter months, families change into their snow gear to ski, snowshoe, or snowmobile. If staying warm is more your style, then there are wonderful resorts with hot tubs and indoor activities that provide for ample family time and creating memories to last a lifetime.</p>
+                </div>
+                
+                <div class="contentbox contact">Contact Information
+                <img src="images/guide-idaho-map-108942.jpg">
+                 30 North 1st East <br> Preston, ID 83263<br> 555.555.5555<br>theweathersite@gmail.com<br>
+                </div>
             </section>
         </main>
         
@@ -53,11 +74,11 @@
                     <br>
                     Today's date: <span id="currentdate"></span>
                    <span id="date"></span>
-                    <script src = "js/currentdate.js"></script>
                     <a href="https://jeepyne.github.io">Back To Home Page</a>
                 </p1>
                 <script src="js/responsive.js"></script>
-                               
-           </footer>
+                <script src="js/currentdate.js"></script>
+                <script src="js/banner.js"></script>
+         </footer>
     </body>
     </html>   
