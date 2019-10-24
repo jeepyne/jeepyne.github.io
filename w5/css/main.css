@@ -99,8 +99,8 @@ main{ padding: 2em;
   
 }
 .contentbox {background-color: white;
-    margin:10px;
-    padding:10px;
+    margin:20px;
+    padding:20px;
     border: 2px #f9ebac;
     border-radius: 10px;
 }
@@ -144,7 +144,6 @@ footer{color:#fcd574;
 .article{font-size:.75em;}
 
 .contact {font-size:.55em;
-
 }
 
 .contact img {max-width: width 400px;
