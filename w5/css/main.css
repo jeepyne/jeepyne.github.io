@@ -119,9 +119,12 @@ footer{color:#fcd574;
 }
 
 .hero {margin: auto;
-    position:relative;
+    position: relative;
+    max-width: width 800px;
+    width: 100%;
 }
-.hero img {max-width: width 1200px;
+
+.hero img {max-width: width 800px;
     width: 100%;
     border-radius: 10px;
     float: right;
@@ -143,10 +146,11 @@ footer{color:#fcd574;
 
 .article{font-size:.75em;}
 
-.contact {font-size:.55em;
-}
-
 .contact img {max-width: width 400px;
     max-width: 25%;
     border-radius: 10px;
     float: left;}
+
+.contact {font-size:.55em;
+}
+
