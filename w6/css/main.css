@@ -128,7 +128,7 @@ footer{color:#fcd574;
     max-width: width 800px;
     border-radius: 10px;
     float: right;
- }
+}
 
 .summary{position: absolute;
     top:25px;
@@ -147,15 +147,13 @@ footer{color:#fcd574;
 
 .article{font-size:.75em;}
 
-.contact img {
-    width: 33%;
-    max-width: 400px;
+.contact img {max-width: width 400px;
+    max-width: 25%;
     border-radius: 10px;
     float: left;
-    padding: 10px;  
+    margin: auto;    
 }
 
 .contact {font-size:.55em;
-    display: flex;
 }
 
