@@ -42,29 +42,36 @@
         <main>
             <h2>Preston, Idaho</h2>
             <section id=minfo>
+
                 <div class="hero">
-                    <img src="images/bluesky.jpg" alt="blue sky">
+                    <picture id = "hero_pic">
+                        <img id="hero_sky" src="images/hero_large.jpg" alt="blue sky"
+                        srcset="images/hero_large.jpg 1000w, images/hero_medium.jpg 700w, images/hero_small.jpg 400w"
+                        sizes="(min-width:1000px), 700px, 100vw">
+                    </picture>
+
                 <section class="content box summary"><h3>Weather Summary</h3>
-                <p>Currently:<span id="currently">Sunny</span></p>
-                <p>High: <span id="high">76</span></p>
-                <p>Wind Chill:<span id="windchill">10</span></p>
-                <p>Humidity: <span id="humidity">60%</span></p>
-                <p>Wind Speed: <span id="windspeed">5 mph</span></p>
+                    <p>Currently:<span id="currently">Sunny</span></p>
+                    <p>High: <span id="high">76</span></p>
+                    <p>Wind Chill:<span id="windChill"></span></p>
+                    <p>Humidity: <span id="humidity">60%</span></p>
+                    <p>Wind Speed: <span id="windspeed">5 mph</span></p>
                 </section>
                 </div>
 
                 <div class="contentbox forecast"> <h3>5 day Forecast</h3>
+                    <p>High:75 <br> Low:55 </p>
                 </div> 
                 
                 <div class="contentbox article">
                     <img id="art" src="images/beautiful-cropland-dawn-1237119.jpg" alt="cropland image">
                     <h3>Featured article: Family Activities</h3>
-                <p>In the beautiful town of Preston, Idaho families enjoy exploring the beautiful scenery by hiking through the mountains, fishing in nearby rivers, and watching the sun set over the plains. Each season has different activities to offer. In the winter months, families change into their snow gear to ski, snowshoe, or snowmobile. If staying warm is more your style, then there are wonderful resorts with hot tubs and indoor activities that provide for ample family time and creating memories to last a lifetime.</p>
+                        <p>In the beautiful town of Preston, Idaho families enjoy exploring the beautiful scenery by hiking through the mountains, fishing in nearby rivers, and watching the sun set over the plains. Each season has different activities to offer. In the winter months, families change into their snow gear to ski, snowshoe, or snowmobile. If staying warm is more your style, then there are wonderful resorts with hot tubs and indoor activities that provide for ample family time and creating memories to last a lifetime.</p>
                 </div>
                 
                 <div class="contentbox contact">
-                <img src="images/guide-idaho-map-108942.jpg">
-                <br>
+                    <img src="images/guide-idaho-map-108942.jpg">
+                    <br>
                 <p>Contact Information<br> 30 North 1st East <br> Preston, ID 83263<br> 555.555.5555<br>theweathersite@gmail.com
                 </p>
                 </div>
@@ -81,6 +88,7 @@
                 <script src="js/responsive.js"></script>
                 <script src="js/currentdate.js"></script>
                 <script src="js/banner.js"></script>
+                <script src="js/windchill.js"></script>
          </footer>
     </body>
     </html>   
