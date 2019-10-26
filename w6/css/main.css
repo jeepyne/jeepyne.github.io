@@ -10,7 +10,7 @@ header{background:#1e8299;
     justify-content: center;
     text-align: center;
     font-size: 2em;
-    line-height: 1%;
+    line-height: 1;
   }
 
 .logo{width:100px;
@@ -46,6 +46,7 @@ h3{
     font-family: 'Pacifico', cursive;
     font-weight: normal;
     margin-left: .5em;
+    margin: 5px;
 }
 
 #catch {font-size:.5em;
@@ -99,7 +100,7 @@ main{ padding: 2em;
   
 }
 .contentbox {background-color: white;
-    margin:20px;
+    margin:20px 0px;
     padding:20px;
     border: 2px #f9ebac;
     border-radius: 10px;
@@ -125,20 +126,22 @@ footer{color:#fcd574;
 }
 
 .hero img {width: 100%;
-    max-width: width 800px;
     border-radius: 10px;
-    float: right;
 }
 
 .summary{position: absolute;
     top:25px;
     left:25px;
     background:#fcd574;
-    box-shadow: white;
     opacity: .8;
     font-size: .75em;
-    margin: 50px;
-    padding: 2rem;
+    padding: 10px;
+}
+
+.summary p {
+    line-height: 1;
+    margin: .5em;
+    font-size: .75em;
 }
 
 #art {float: right;
