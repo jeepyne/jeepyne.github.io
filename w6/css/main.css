@@ -160,3 +160,10 @@ footer{color:#fcd574;
 .contact {font-size:.55em;
 }
 
+.forecast{margin:auto;
+    justify-content: center;
+    text-align: center;
+}
+.tr {display: table-row;
+    vertical-align: middle;
+}
