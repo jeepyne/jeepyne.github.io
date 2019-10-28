@@ -164,6 +164,8 @@ footer{color:#fcd574;
     justify-content: center;
     text-align: center;
 }
-.tr {display: table-row;
-    vertical-align: middle;
+
+.left, .right {display: block;
+    width: 48%;
+    flex: 1 1 auto;
 }
