@@ -40,7 +40,7 @@ h2{
     margin-left: .5em;
 }
 h3{
-    text-align: left;
+    text-align: center;
     color: rgb(112, 112, 112);
     font-size: 1em;
     font-family: 'Pacifico', cursive;
@@ -124,10 +124,11 @@ footer{color:#fcd574;
     max-width: width 800px;
     width: 100%;
 }
-
 .hero img {width: 100%;
-    border-radius: 10px;
-}
+    border-radius: 10px;}
+
+#heropic{width: 100%;
+    border-radius: 10px;}
 
 .summary{position: absolute;
     top:25px;
@@ -144,28 +145,46 @@ footer{color:#fcd574;
     font-size: .75em;
 }
 
+/* forecast*/
+
+table, th, td {
+    font-size:.85em;
+    text-align: center;
+    border: 1px solid #083047;
+    text-align: center;
+    margin: 2px auto;
+    padding: 7px;
+    border-collapse: collapse;
+    width:100%;
+    max-width: 400px;
+}
+
+/* Article*/
+
 #art {float: right;
-    width: 40%;
-    padding: 10px;}
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 10px;}
 
 .article{font-size:.75em;}
 
-.contact img {max-width: width 400px;
-    max-width: 25%;
-    border-radius: 10px;
-    float: left;
-    margin: auto;    
+/*contact information*/
+
+.contact img, .left {
+    display: block;
+}
+.contact img {width: 100%;
+    max-width: 300px;
 }
 
 .contact {font-size:.55em;
+    text-align: left;
 }
-
-.forecast{margin:auto;
-    justify-content: center;
-    text-align: center;
-}
-
-.left, .right {display: block;
+.right {display: block;
     width: 48%;
     flex: 1 1 auto;
+    margin: .5em;
 }
+
+
