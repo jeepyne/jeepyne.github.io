@@ -1,0 +1,28 @@
+body {
+    margin:0 auto;
+    display: block;
+}
+
+picture{display: grid;
+    margin:20px;
+}
+
+picture img[data-src]{
+    opacity: 50%;
+    transition-property: blur;
+    transition-duration: 1ms;
+    transition-timing-function: ease-in;
+}
+
+picture img{
+    max-width: 300px;
+    height: 400px;
+}
+
+h1{
+    color:#083047;
+    font-family: 'Pacifico', cursive;
+    margin:auto 20px;
+    font-weight: normal;
+    font-size:2em;
+}
