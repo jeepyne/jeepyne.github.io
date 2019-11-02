@@ -8,10 +8,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lazy Loading</title>
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="preston/css/normalize.css">
+    <link rel="stylesheet" href="preston/css/main.css">
+    <link rel="stylesheet" href="preston/css/medium.css">
+    <link rel="stylesheet" href="preston/css/small.css">
+    <link rel="shortcut icon" href="favicon.ico">
+
     <link href="https://fonts.googleapis.com/css?family=Lato%7cPacifico&display=swap" rel="stylesheet">
 </head>
 
 <body>
+        <div id= "pancakes"></div>
+    <header>
+        <img class = "logo" src = "images/iconfinder_icon-8-cloud-sun-snow_315949.png"
+        alt="Sun or Snow Logo">
+        <section class="headings">
+        <h1>Sun or Snow</h1>
+        <div id="catch">What's the weather like today?</div>
+        </section>
+    </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">☰Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="w7/gallery-7.html">Gallery</a></li>
+    
+            </ul>
+        </nav>
 <main>
     <h1>Idaho Weather Image Gallery</h1>
     <div class="boxed">
@@ -42,7 +69,21 @@
             </figure>
     </picture>
     </div>
-</main>
-    <script src="js/lazy.js"></script>
+</main>        
+<footer>
+        <p> &copy;2019 | Jessie Pyne | Georgia | <a href="https://www.byui.edu/online">BYU Idaho Online Learning</a> 
+            <br>
+            Last Modified: <span id="currentdate"></span>
+           <span id="date"></span>
+            <a href="https://jeepyne.github.io">Back To Home Page</a>
+        </p1>
+        <script src="js/responsive.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/banner.js"></script>
+        <script src="js/windchill.js"></script>
+        <script src="js/webfontload.js"></script>
+        <script src="js/lazy.js"></script>
+ </footer>
+    
 </body>
 </html>

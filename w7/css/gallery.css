@@ -8,6 +8,7 @@ body {
 
 body{
     background: #e3efea;
+    margin: auto;
 }
 
 figcaption {font-family: 'Lato', sans-serif;
@@ -31,6 +32,7 @@ h1{
 .sunsnow {display: grid;
     margin:20px;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: ;
     max-width: 400px;
 }
 
