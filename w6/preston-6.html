@@ -48,7 +48,9 @@
                         <img id="hero_sky" src="images/hero_large.jpg" alt="blue sky"
                         srcset="images/hero_large.jpg 1000w,
                                 images/hero_medium.jpg 700w,
-                                images/hero_small.jpg 400w">              
+                                images/hero_small.jpg 400w"
+                        sizes = "100vw"
+                        >              
                     </picture>
 
                 <section class="content box summary"><h3>Weather Summary</h3>
@@ -64,11 +66,11 @@
                         <h3>5 day Forecast</h3>
                     <table>
                         <tr>
-                            <th>Wednesday</th>
-                            <th>Thursday</th>
-                            <th>Friday</th>
-                            <th>Saturday</th>
-                            <th>Sunday</th>
+                            <th>Wed</th>
+                            <th>Thurs</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
                         </tr>
                         <tr>
                             <td>85°F</td>
@@ -88,7 +90,7 @@
                 
                 <div class="contentbox contact">
                     <div class = "left">
-                        <img src="images/guide-idaho-map-108942.jpg">
+                        <img src="images/guide-idaho-map-108942.jpg" alt="Idaho Map">
                     </div>
                     <div class = "right">
                         <br>
@@ -100,7 +102,7 @@
         </main>
         
         <footer>
-                <p1> &copy;2019 | Jessie Pyne | Georgia | <a href="https://www.byui.edu/online">BYU Idaho Online Learning</a> 
+                <p> &copy;2019 | Jessie Pyne | Georgia | <a href="https://www.byui.edu/online">BYU Idaho Online Learning</a> 
                     <br>
                     Last Modified: <span id="currentdate"></span>
                    <span id="date"></span>
@@ -110,6 +112,7 @@
                 <script src="js/currentdate.js"></script>
                 <script src="js/banner.js"></script>
                 <script src="js/windchill.js"></script>
+                <script src="js/webfontload.js"></script>
          </footer>
     </body>
     </html>   
