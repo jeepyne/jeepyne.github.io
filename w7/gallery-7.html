@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="lazy loading">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lazy Loading</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato%7cPacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<main>
+    <h1>Idaho Weather Image Gallery</h1>
+    <div class="boxed">
+    <picture class = sunsnow>
+        <img class="hover" src = "images/snow.jpg" data-src="images/backlit.jpg" alt="Silhouette">
+        <figcaption>Silhouette on the Sand Dunes</figcaption>
+        <img class="hover" src = "images/snow.jpg" data-src="images/dawn.jpg" alt="Dawn">
+        <figcaption>Dawn on the Plains</figcaption>
+        <img class="hover" src = "images/snow.jpg" data-src="images/clouds.jpg" alt="Clouds">
+        <figcaption>Clouds in the sky</figcaption>
+        <img class="hover" src = "images/snow.jpg" data-src="images/mountains.jpg" alt="Mountains">
+        <figcaption>Mountains in the distance</figcaption>
+        <img class="hover" src = "images/snow.jpg" data-src="images/snow.jpg" alt="Snowy day">
+        <figcaption>Winter White</figcaption>
+        <img class="hover" src = "images/snow.jpg" data-src="images/map.jpg" alt="Idaho Map">
+        <figcaption>Time to Explore</figcaption>
+    </picture>
+    </div>
+</main>
+    <script src="js/lazy.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    margin: 20px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background: #e3efea;
+}
+
+figcaption {font-family: 'Lato', sans-serif;
+    color:#083047;
+}
+
+h1{
+    color:#083047;
+    font-family: 'Pacifico', cursive;
+    margin:auto 20px;
+    font-weight: normal;
+    font-size:2em;
+}
+
+.boxed {display: grid;
+    margin:20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 400px;
+}
+
+.sunsnow {display: grid;
+    margin:20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 400px;
+}
+
+img[data-src]{
+    filter:blur(.5em);
+}
+
+img{
+    width: 250px;
+    height: auto;
+    filter: blur(0em);
+    padding: 10px;
+    filter: blur(0em);
+    transition-duration: 1s;
+}
+
+.hover:hover {box-shadow:0 0 50px #083047;
+    margin: auto;
+}
+
