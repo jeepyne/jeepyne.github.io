@@ -6,6 +6,7 @@
     .navigation li:first-child {display: block;}
     .navigation li {display: none;}
     .responsive li {display: block;} 
+    
     .boxed {
         grid-template-columns: 1fr;
     }
