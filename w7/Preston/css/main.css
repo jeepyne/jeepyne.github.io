@@ -171,20 +171,15 @@ table, th, td {
 
 /*contact information*/
 
-.contact img, .left {
-    display: block;
-}
-.contact img {width: 100%;
-    max-width: 300px;
+.contact img {width: 25%;
+    float: left;
 }
 
-.contact {font-size:.55em;
-    text-align: left;
+.contact {font-size:.6em;
+    text-align: right;
 }
-.right {display: block;
-    width: 48%;
+.right {display: flex;
     flex: 1 1 auto;
-    margin: .5em;
 }
 
 
