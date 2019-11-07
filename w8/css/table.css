@@ -1,0 +1,28 @@
+
+table, th,td {border: 1px solid rgb(206, 205, 205);
+    border-collapse: collapse;
+    text-align: center;
+    margin: 2px auto;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+thead{font-size: 30px;}
+
+tfoot{font-size: 13px;}
+
+tbody {background-color:#e7f0ed;
+     }
+
+tbody tr:nth-child(even) {
+        background-color: #e7ffed;
+      }
+
+thead,tfoot {
+        color:black;
+        background-color:#7fb9c2;
+    }
+
+.blue {color: white;
+    background-color:#628ca6;
+}
