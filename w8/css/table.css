@@ -14,7 +14,7 @@ tfoot{font-size: 13px;}
 tbody {background-color:#e7f0ed;
      }
 
-tbody tr:nth-child(even) {
+tbody tr:nth-child(odd) {
         background-color: #e7ffed;
       }
 
