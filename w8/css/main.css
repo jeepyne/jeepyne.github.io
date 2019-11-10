@@ -207,6 +207,7 @@ img[data-src]{
 .boxed img:hover {box-shadow:0 0 50px #083047;
     margin: auto;
 }
+figure{margin:10px;}
 
 /*form page storm center*/
 
@@ -221,11 +222,3 @@ label {padding: 5px;
     font-family:'Noto Sans SC', sans-serif;
     text-align: center;
 }
-
-#ratingvalue {margin: 10px;
-    align-items: center;
-    color:#083047;
-    margin: 10px;
-  
-}
-
