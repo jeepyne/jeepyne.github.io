@@ -45,7 +45,7 @@
 <fieldset>
     <h3>Contact Information</h3>
 
-<label> Name:<input type="text" name="firstandlast" value="" minlength="5" required pattern="[A-Za-z ]{5,}"><br>
+<label> Name: <input type="text" name="firstandlast" value="" minlength="5" required pattern="[A-Za-z ]{5,}"><br>
 </label>    
 
 
@@ -56,7 +56,7 @@
 
 
 <!--phone number-->
-    <label>Phone:<input type="tel" name="phone" required>
+    <label>Phone: <input type="tel" name="phone" required>
     </label><br>
 
 <!--zip code-->
@@ -65,26 +65,27 @@
     <br>
     <br>
 </fieldset>
+<br>
 <fieldset>
 <h3>Storm Information</h3>
 <!--storm date-->
-    <label>Date:<input type="date" name="date">
+    <label>Date: <input type="date" name="date">
     </label> <br>
 
 <!--storm type-->
-    <label>Storm Type: <input name="stormtype" list="stormt">
+    <label>Storm Type: <input list="stormt" name="stormtype" >
     </label>
     <datalist id="stormt">
-        <option value="Flash Flood">
-        <option value="Hail">
-        <option value="Hurricane">
-        <option value="Thunderstorm">
-        <option value="Tornado">
+        <option value="Flash Flood">Flash Flood</option>
+        <option value="Hail">Hail</option>
+        <option value="Hurricane">Hurricane</option>
+        <option value="Thunderstorm">Thunderstorm</option>
+        <option value="Tornado">Tornado</option>
     </datalist>
     <br>
-
+    <br>
 <!--storm severity-->
-    <label class="rates" for="rating"> Rating:
+    <label class="rates" for="rating"> Rating: 
         <input type="range" id="rating" value="10" min="0" max="10" step="1" list="tickmarks"
         oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
         <span id ="ratingvalue">10</span>
@@ -105,10 +106,10 @@
     </label><br>
 
 <!--storm region-->
-<label>Storm Region: <input name="stormregion" list="sregion">
+<label>Storm Region:
 </label>
-<select name="stormregion" form="sregion">
-        <option value="Select Region" Disabled>Select Region</option>
+<select name="stormregion">
+        <option disabled>Select Region</option>
         <option value="Preston">Preston</option>
         <option value="Soda Springs">Soda Springs</option>
         <option value="Fish Haven">Fish Haven</option>
@@ -116,16 +117,19 @@
 <br>
 
 <!--user in danger level-->
-<label>User in danger? <br>
+<label>Are you in danger? <br>
     <input type="radio" name="danger" value="Yes"> Yes <br>
     <input type="radio" name="danger" value="No"> No <br>
     <input type="radio" name="danger" value="Maybe"> Maybe <br>
     
 </label><br>
+</fieldset>
+<br>
+<fieldset>
 <!--Comments-->
 Additional Comments:<br>
 <textarea rows="5" cols="25"></textarea><br>
-
+</fieldset>
 <!--Form Submission-->
 <input type="submit" value="Submit"></a>
 </fieldset>
