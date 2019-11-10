@@ -39,6 +39,7 @@ h2{
     font-weight: normal;
     margin-left: .5em;
 }
+
 h3{
     text-align: left;
     color: rgb(112, 112, 112);
@@ -182,4 +183,26 @@ table, th, td {
     flex: 1 1 auto;
 }
 
+
+/*form page storm center*/
+
+form {line-height: 2;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    }
+
+label {padding: 5px;
+    font-family:'Noto Sans SC', sans-serif;
+    text-align: center;
+}
+
+#ratingvalue {margin: 0 15px;
+    align-items: center;
+}
+
+.rates {
+    align-items: center;
+    text-align: center;
+}
 
