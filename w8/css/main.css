@@ -41,7 +41,7 @@ h2{
 }
 
 h3{
-    text-align: left;
+    text-align: center;
     color: rgb(112, 112, 112);
     font-size: 1em;
     font-family: 'Pacifico', cursive;
@@ -182,7 +182,31 @@ table, th, td {
 .right {display: flex;
     flex: 1 1 auto;
 }
+/* gallery page info */
 
+figcaption {font-family: 'Lato', sans-serif;
+    color:#083047;
+}
+
+.boxed {display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    width: 100%;
+}
+
+img[data-src]{
+    filter:blur(.5em);
+}
+
+.boxed img{
+    width: 100%;
+    filter: blur(0em);
+    transition-duration: .5s;
+}
+
+.boxed img:hover {box-shadow:0 0 50px #083047;
+    margin: auto;
+}
 
 /*form page storm center*/
 
