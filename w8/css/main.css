@@ -222,12 +222,10 @@ label {padding: 5px;
     text-align: center;
 }
 
-#ratingvalue {margin: 0 15px;
+#ratingvalue {margin: 10px;
     align-items: center;
-}
-
-.rates {
-    align-items: center;
-    text-align: center;
+    color:#083047;
+    margin: 10px;
+  
 }
 

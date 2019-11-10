@@ -67,7 +67,9 @@
 </fieldset>
 <br>
 <fieldset>
+
 <h3>Storm Information</h3>
+
 <!--storm date-->
     <label>Date: <input type="date" name="date">
     </label> <br>
@@ -83,8 +85,8 @@
         <option value="Tornado">Tornado</option>
     </datalist>
     <br>
-    <br>
-<!--storm severity-->
+ 
+    <!--storm severity-->
     <label class="rates" for="rating"> Rating: 
         <input type="range" id="rating" value="10" min="0" max="10" step="1" list="tickmarks"
         oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
@@ -130,6 +132,7 @@
 Additional Comments:<br>
 <textarea rows="5" cols="25"></textarea><br>
 </fieldset>
+<br>
 <!--Form Submission-->
 <input type="submit" value="Submit"></a>
 </fieldset>
