@@ -1,1 +1,44 @@
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif%7cRoboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Roboto&display=swap');
+
+body {background: white;
+    color: black;
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+h1,h2 {
+    color:rgb(91, 92, 175);
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    font-size:1.75em;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    text-align: center;
+    background-color: rgb(214, 214, 214);
+    box-shadow: 0 0 20px grey;
+    padding: 25px;
+}
+
+.cards img {width:75%;
+    box-shadow: 0 0 15px grey;
+}
+
+main {font-display:'Roboto', sans-serif;
+}
+
+.cards section {border: 1px solid rgb(91, 92, 175);
+    background:rgb(217, 218, 233);
+}
+
+@media only screen and (max-width: 700px) {
+    .cards {grid-template-columns: 1fr 1fr;}
+}
+
+ @media only screen and (max-width: 400px) {
+    .cards {grid-template-columns: 1fr;}
+}
