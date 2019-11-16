@@ -33,19 +33,19 @@
                 <li><a href="preston-6.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li active><a href="stormcenter.html">Storm Center</a></li>
                 <li><a href="gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
 <main>
-  
-            <h2>Please fill out the following forms to report your weather incident.</h2> 
+    <h2>Storm Center</h2>
+            <h3>Please fill out the following forms to report your weather incident.</h3> 
 <!--Full Name-->
 <form action="thanks.html" method="get">
 <fieldset>
     <h3>Contact Information</h3>
 
-<label> Name: <input type="text" name="firstandlast" value="" minlength="5" required pattern="[A-Za-z ]{5,}"><br>
+<label> *Name: <input type="text" name="firstandlast" value="" minlength="5" required pattern="[A-Za-z ]{5,}"><br>
 </label>    
 
 
@@ -56,7 +56,7 @@
 
 
 <!--phone number-->
-    <label>Phone: <input type="tel" name="phone" required>
+    <label>*Phone: <input type="tel" name="phone" required>
     </label><br>
 
 <!--zip code-->
@@ -109,7 +109,7 @@
 <label>Storm Region:
 </label>
 <select name="stormregion">
-        <option disabled>Select Region</option>
+        <option selected disabled>Select Region</option>
         <option value="Preston">Preston</option>
         <option value="Soda Springs">Soda Springs</option>
         <option value="Fish Haven">Fish Haven</option>
@@ -133,7 +133,7 @@ Additional Comments:<br>
 <br>
 <!--Form Submission-->
 <input type="submit" value="Submit">
-</fieldset>
+
 </form>
 
 
