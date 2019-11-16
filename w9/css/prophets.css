@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif%7cRoboto&display=swap');
 
 body {background: white;
     color: black;
@@ -6,12 +6,21 @@ body {background: white;
     max-width: 95%;
 }
 
-h1,h2 {
+h1 {
     color:rgb(91, 92, 175);
     font-family: 'Bree Serif', serif;
     font-weight: bold;
     font-size:1.75em;
     text-align: center;
+}
+
+h2{
+    color:rgb(91, 92, 175);
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    font-size:1.25em;
+    text-align: center;
+    line-height: 1em;
 }
 
 .cards {
@@ -28,7 +37,9 @@ h1,h2 {
     box-shadow: 0 0 15px grey;
 }
 
-main {font-display:'Roboto', sans-serif;
+main {font-family:'Roboto', sans-serif;
+    font-size: 1em;
+    line-height: .5em;
 }
 
 .cards section {border: 1px solid rgb(91, 92, 175);
