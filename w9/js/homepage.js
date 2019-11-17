@@ -5,7 +5,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    //console.table(jsonObject);  // 
+  
     const towns = jsonObject ['towns'];
     for (let i = 0; i < towns.length; i++ )
     {
@@ -23,9 +23,9 @@ fetch(requestURL)
     h4.textContent = towns[i].motto;
     p1.textContent = 'Founded: ' + towns[i].yearFounded;
     p2.textContent = 'Population: ' + towns[i].currentPopulation;
-    p3.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
-    image.setAttribute('src', towns[i].imageurl);
-    image.setAttribute ('alt', towns[i].name + ' ' + towns[i].lastname + '-' + towns[i].order);
+    p3.textContent = 'Average Rainfall: ' + towns[i].averageRainfall + "inches";
+    image.setAttribute('src', "images/" + towns[i].photo);
+    image.setAttribute ('alt', towns[i].name + ' ' + ", Idaho");
 
     townie.appendChild(h3);
     townie.appendChild(h4);

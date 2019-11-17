@@ -5,13 +5,13 @@
 
     .boxed img:hover {box-shadow:none;
                 }
-                
-        article {
+
+    .townie article {
             display: flex;
             flex-direction: columns;
         }
                   
-        article:nth-child(odd) {
+    .townie article:nth-child(odd) {
             flex-direction: row-reverse;
         }
 }

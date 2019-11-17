@@ -41,7 +41,7 @@ h2{
     margin-left: .5em;
 }
 
-h3{
+h3, h4{
     text-align: center;
     color: rgb(112, 112, 112);
     font-size: 1em;
@@ -228,8 +228,11 @@ label {padding: 5px;
 /*Home Page*/
 .townie {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
     text-align: center;
     padding: 25px;
+    background-color: white;
+    margin:20px 0px;
+    border-radius: 10px;
 }
