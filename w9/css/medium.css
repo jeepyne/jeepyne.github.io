@@ -6,7 +6,7 @@
     .boxed img:hover {box-shadow:none;
                 }
 
-    .townie article {
+    .townie {
             display: flex;
             flex-direction: columns;
         }

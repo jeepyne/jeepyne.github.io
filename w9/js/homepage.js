@@ -23,17 +23,17 @@ fetch(requestURL)
     h4.textContent = towns[i].motto;
     p1.textContent = 'Founded: ' + towns[i].yearFounded;
     p2.textContent = 'Population: ' + towns[i].currentPopulation;
-    p3.textContent = 'Average Rainfall: ' + towns[i].averageRainfall + "inches";
+    p3.textContent = 'Average Rainfall: ' + towns[i].averageRainfall + " inches";
     image.setAttribute('src', "images/" + towns[i].photo);
     image.setAttribute ('alt', towns[i].name + ' ' + ", Idaho");
 
-    townie.appendChild(h3);
-    townie.appendChild(h4);
-    townie.appendChild(p1);
-    townie.appendChild(p2);
-    townie.appendChild(p3);
-    townie.appendChild(image);
+    name.appendChild(h3);
+    name.appendChild(h4);
+    name.appendChild(p1);
+    name.appendChild(p2);
+    name.appendChild(p3);
+    name.appendChild(image);
 
     document.querySelector('div.townie').appendChild(name);
     }
-  });
+}});

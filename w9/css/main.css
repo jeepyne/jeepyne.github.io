@@ -230,9 +230,20 @@ label {padding: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
-    text-align: center;
-    padding: 25px;
+}
+.townie div {
+    margin: auto;
+    width: 350px;
+    height: 450px;
+    border: 5px solid #083047;
+    background-color: #083047;
+}
+
+.towns {text-align: center;
+    padding: 20px;
     background-color: white;
     margin:20px 0px;
     border-radius: 10px;
 }
+
+
