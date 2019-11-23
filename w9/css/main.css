@@ -247,3 +247,7 @@ label {padding: 5px;
 }
 
 
+/* Wireframes */
+
+.wireframes {max-width: 32.75%;
+grid-template-columns: 1fr 1fr 1fr;}

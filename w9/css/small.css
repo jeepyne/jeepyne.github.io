@@ -7,4 +7,8 @@
     .navigation li {display: none;}
     .responsive li {display: block;} 
   
+    .townie {flex-direction: column;
+            max-width: 75%;
+    }
+    .towns img {max-width: 75%;}
     }
