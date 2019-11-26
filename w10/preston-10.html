@@ -53,28 +53,28 @@
             <section class="contentbox summary"><h3>Weather Summary</h3>
                 <p>Currently:<span id="currently"> </span></p>
                 <p>High: <span id="current-temp"></span>&deg; F</p>
-                <p>Wind Chill:<span id="windChill"></span></p>
-                <p>Humidity: <span id="humidity"></span></p>
-                <p>Wind Speed: <span id="windspeed"></span></p>
+                <p>Wind Chill:<span id="windChill"></span>&deg; F</p>
+                <p>Humidity: <span id="humidity"></span> %</p>
+                <p>Wind Speed: <span id="windspeed"> mph</span></p>
             </section>
             </div>
 
             <div class="contentbox forecast"> 
                     <h3>5 day Forecast</h3>
-                <table>
+                <table class="mesa">
                     <tr>
-                        <th>Wed</th>
-                        <th>Thurs</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
-                        <th>Sun</th>
+                        <th class="head"></th>
+                        <th class="head"></th>
+                        <th class="head"></th>
+                        <th class="head"></th>
+                        <th class="head"></th>
                     </tr>
                     <tr>
-                        <td>85°F</td>
-                        <td>78°F</td>
-                        <td>75°F</td>
-                        <td>85°F</td>
-                        <td>90°F</td>
+                        <td class="row"></td>
+                        <td class="row"></td>
+                        <td class="row"></td>
+                        <td class="row"></td>
+                        <td class="row"></td>
                     </tr>
                     </table>
             </div> 
@@ -103,6 +103,8 @@
             Last Modified: <span id="currentdate"></span>
             <span id="date"></span><br>
             <a href="https://jeepyne.github.io">Back To Home Page</a>
+            <br>
+            Weather Information obtained from <a href="https://openweathermap.org/">Open Weather Map</a>
         </p>
         <script src="js/responsive.js"></script>
         <script src="js/currentdate.js"></script>
