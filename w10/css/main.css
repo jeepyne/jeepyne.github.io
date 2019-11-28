@@ -234,10 +234,9 @@ label {padding: 5px;
 .townie div {
     margin: auto;
     width: 350px;
-    height: 450px;
-    border: 5px solid #083047;
-    background-color: #083047;
 }
+
+.townie>div {display: flex;}
 
 .towns {text-align: center;
     padding: 20px;
@@ -246,7 +245,7 @@ label {padding: 5px;
     border-radius: 10px;
 }
 
-.townie img {max-width: 75%;}
+.townie img {width: 100%;}
 
 
 /* Wireframes */

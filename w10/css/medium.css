@@ -8,10 +8,10 @@
 
     .townie {
             display: flex;
-            flex-direction: columns;
+            flex-direction: row;
         }
                   
-    .townie article:nth-child(odd) {
+    .townie article:nth-child(even) {
             flex-direction: row-reverse;
         }
 }

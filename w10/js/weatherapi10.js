@@ -41,7 +41,7 @@ fetch(jsonURL)
           var dailyt = jsObject.list[i].main.temp
           document.getElementById("dailyt").textContent = jsObject.list[i].main.temp;
 
-          let icon = "https://openweathermap.org/img/wn/" + jsObject.list[i].weather[0].icon + ".png";
+          let icon = "http://openweathermap.org/img/wn/10d@2x.png" + jsObject.list[i].weather[0].icon + ".png";
           document.getElementById(icon).setAttribute("src",iconSrc);
           
           row[t].appendChild (icon);
