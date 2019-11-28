@@ -22,9 +22,9 @@ fetch(apiURL)
     
   });
 
-  const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=4e16acb56e4905a6e4220f0853f8c0ca";
+  const jsonURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=4e16acb56e4905a6e4220f0853f8c0ca";
 
-fetch(apiURL)
+fetch(jsonURL)
   .then((response) => response.json())
   .then((jsObject) => {
       let head = document.getElementById('head');
