@@ -27,23 +27,26 @@ fetch(apiURL)
 fetch(jsonURL)
   .then((response) => response.json())
   .then((jsObject) => {
-      let head = document.getElementById('head');
-      let row = document.getElementById('row');
+      let head = document.getElementsByClassName('head');
+      let row = document.getElementsByClassName('row');
 
       let d = 0
       for (i = 0; i <jsObject.list.length; i++){
         if (jsObject.list[i].dt_txt.substring == "18:00:00" && d < row.length)
         {let day = new Date(jsObject.list[i].dt_txt.substring);
           day = day.getDay();
-          head[d].innerHTML = day;
+          head[d].innerHTML = day[day];
           
         
           var dailyt = jsObject.list[i].main.temp
           document.getElementById("dailyt").textContent = jsObject.list[i].main.temp;
 
-          let iconSrc = "https://openweathermap.org/img/wn/" + jsObject.list[i].weather[0].icon + ".png";
+          let icon = "https://openweathermap.org/img/wn/" + jsObject.list[i].weather[0].icon + ".png";
           document.getElementById(icon).setAttribute("src",iconSrc);
           
+          row[t].appendChild (icon);
+          row[t].appendChild (text);
+
           d++;
         }
       }
