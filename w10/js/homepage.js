@@ -11,7 +11,7 @@ fetch(requestURL)
     {
         if(towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven")
         {
-    let name = document.createElement('name');
+    let section = document.createElement('section');
     let h3 = document.createElement('h3');
     let h4 = document.createElement('h4');
     let p1 = document.createElement('p');
@@ -27,13 +27,13 @@ fetch(requestURL)
     image.setAttribute('src', "images/" + towns[i].photo);
     image.setAttribute ('alt', towns[i].name + ' ' + ", Idaho");
 
-    name.appendChild(h3);
-    name.appendChild(h4);
-    name.appendChild(p1);
-    name.appendChild(p2);
-    name.appendChild(p3);
-    name.appendChild(image);
+    section.appendChild(h3);
+    section.appendChild(h4);
+    section.appendChild(p1);
+    section.appendChild(p2);
+    section.appendChild(p3);
+    section.appendChild(image);
 
-    document.querySelector('div.townie').appendChild(name);
+    document.querySelector('div.townie').appendChild(section);
     }
 }});
