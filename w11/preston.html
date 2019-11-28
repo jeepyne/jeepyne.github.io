@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Page">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Home Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato%7cPacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+            <a href="index.html"></a><img class = "logo" src = "images/iconfinder_icon-8-cloud-sun-snow_315949.png"
+            alt="Sun or Snow Logo"></a>
+        <section class="headings">
+        <h1>Sun or Snow</h1>
+        <div id="catch">What's the weather like today?</div>
+        </section>
+    </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">☰Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+<main>
+        <h2>Preston, Idaho</h2>
+        <section id=minfo>
+
+            <div class="hero">
+                <picture id = "heropic">
+                    <img id="hero_sky" src="images/hero_large.jpg" alt="blue sky"
+                    srcset="images/hero_large.jpg 1000w,
+                            images/hero_medium.jpg 700w,
+                            images/hero_small.jpg 400w"
+                    sizes = "100vw"
+                    >              
+                </picture>
+
+            <section class="contentbox summary"><h3>Weather Summary</h3>
+                <p>Currently:<span id="currently"> </span></p>
+                <p>High: <span id="current-temp"></span>&deg; F</p>
+                <p>Wind Chill:<span id="windChill"></span>&deg; F</p>
+                <p>Humidity: <span id="humidity"></span> %</p>
+                <p>Wind Speed: <span id="windspeed"> mph</span></p>
+            </section>
+            </div>
+
+            <div class="contentbox forecast"> 
+                    <h3>5 day Forecast</h3>
+                <table class="mesa">
+                    <tr>
+                        <th class="head"></th>
+                        <th class="head"></th>
+                        <th class="head"></th>
+                        <th class="head"></th>
+                        <th class="head"></th>
+                    </tr>
+                    <tr>
+                        <td class="row"></td>
+                        <td class="row"></td>
+                        <td class="row"></td>
+                        <td class="row"></td>
+                        <td class="row"></td>
+                    </tr>
+                    </table>
+            </div> 
+            
+            <div class="contentbox article">
+                <img id="art" src="images/beautiful-cropland-dawn-1237119.jpg" alt="cropland image">
+                <h3>Featured article: Family Activities</h3>
+                    <p>In the beautiful town of Preston, Idaho families enjoy exploring the beautiful scenery by hiking through the mountains, fishing in nearby rivers, and watching the sun set over the plains. Each season has different activities to offer. In the winter months, families change into their snow gear to ski, snowshoe, or snowmobile. If staying warm is more your style, then there are wonderful resorts with hot tubs and indoor activities that provide for ample family time and creating memories to last a lifetime.</p>
+            </div>
+            
+            <div class="contentbox contact">
+                <div class = "left">
+                    <img src="images/map.jpg" alt="Idaho Map">
+                </div>
+                <div class = "right">
+                    <br>
+                    <p>Contact Information<br> 30 North 1st East <br> Preston, ID 83263<br> 555.555.5555<br>theweathersite@gmail.com
+                    </p>
+                </div>
+            </div>
+        </section>
+</main>        
+    <footer>
+        <p> &copy;2019 | Jessie Pyne | Georgia | <a href="https://www.byui.edu/online">BYU Idaho Online Learning</a> 
+            <br>
+            Last Modified: <span id="currentdate"></span>
+            <span id="date"></span><br>
+            <a href="https://jeepyne.github.io">Back To Home Page</a>
+            <br>
+            Weather Information obtained from <a href="https://openweathermap.org/">Open Weather Map</a>
+        </p>
+        <script src="js/responsive.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/webfontload.js"></script>
+        <script src="js/weatherapi10.js"></script>
+    </footer>
+        
+    </body>
+    </html>

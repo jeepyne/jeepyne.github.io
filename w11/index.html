@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Page">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Home Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato%7cPacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+            <a href="index.html"></a><img class = "logo" src = "images/iconfinder_icon-8-cloud-sun-snow_315949.png"
+            alt="Sun or Snow Logo"></a>
+        <section class="headings">
+        <h1>Sun or Snow</h1>
+        <div id="catch">What's the weather like today?</div>
+        </section>
+    </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">☰Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+<main>
+ 
+    <h2>Home Page</h2>
+    <div class="hero">
+            <figure id="heropic">
+                    <img src="images/homepage.png" alt="Idaho New Forecast Zones">
+                    <figcaption>Proposed New Forecast Zones for July 2020</figcaption>
+            </figure>
+    </div>
+    <div class="contentbox article">
+
+        <h3>Proposed New Forecast Zones in Southeast Idaho</h3>
+        <br>
+        In Idaho, most long-fused watches, warnings, and advisories issued by the NWS (such as Wind Advisories and Winter Storm Warnings) are issued in areas called “zones”. Our current configuration of 11 forecast zones was created during the mid 1990s using broad-brushed climate areas and has not significantly changed since that time. Over the years, NWS Pocatello meteorologists have found that our current zone configuration does not adequately reflect important local differences in geography and weather impacts. This sometimes results in "over-warning", where an impact is occuring within the current structure of our zones.
+
+        To provide a better service to our community we are working towards changing our zone configuration from 11 zones to 25 zones. These proposed zone changes are based on both climatological data, such as average annual precipitation, known weather, water and climate impacts, and forecaster experience. These changes were extensively discussed and collaborated with local and state emergency managers.
+        
+        The new proposed zones will allow us to better emphasize local impact areas and provide more accurately watches, warnings, and advisories in these known regions.  Recent feedback about this proposal from several local media sources and our Idaho Transportation Department partners was very positive.
+    </div>
+
+        <article class="towns">
+        <div class="townie">
+        </div>
+        </article>
+
+
+   <p>
+       <h3>Wireframes</h3> <br>
+       <img class = wireframes src="images/large_wireframe.jpg" alt="Large Wireframe">
+       <img class = wireframes src="images/medium_wireframe.jpg" alt="Medium Wireframe">
+       <img class = wireframes src="images/small_wireframe.jpg" alt="Small Wireframe">
+   </p>
+
+</main>        
+    <footer>
+        <p> &copy;2019 | Jessie Pyne | Georgia | <a href="https://www.byui.edu/online">BYU Idaho Online Learning</a> 
+            <br>
+            Last Modified: <span id="currentdate"></span>
+            <span id="date"></span><br>
+            <a href="https://jeepyne.github.io">Back To Home Page</a>
+        </p>
+        <script src="js/responsive.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/webfontload.js"></script>
+        <script src="js/homepage.js"></script>
+    </footer>
+        
+    </body>
+    </html>

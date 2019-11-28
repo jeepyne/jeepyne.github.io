@@ -1,0 +1,14 @@
+@media only screen and (max-width: 400px) {
+    main, footer{width:95%;
+                margin:auto;}
+
+    .navigation {flex-direction:column;}
+    .navigation li:first-child {display: block;}
+    .navigation li {display: none;}
+    .responsive li {display: block;} 
+  
+    .townie {flex-direction: column;
+            max-width: 75%;
+    }
+    .towns img {max-width: 75%;}
+    }
