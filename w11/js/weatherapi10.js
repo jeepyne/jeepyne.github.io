@@ -3,7 +3,6 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    //console.log(jsObject);
 
     var temp = parseFloat(jsObject.main.temp);
     var speed = parseFloat (jsObject.wind.speed);
@@ -22,32 +21,28 @@ fetch(apiURL)
     
   });
 
-  const jsonURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=4e16acb56e4905a6e4220f0853f8c0ca";
+const forecastAPI = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=4e16acb56e4905a6e4220f0853f8c0ca";
 
-fetch(jsonURL)
+fetch(forecastAPI)
   .then((response) => response.json())
   .then((jsObject) => {
-      let head = document.getElementsByClassName('head');
-      let row = document.getElementsByClassName('row');
 
-      let d = 0
-      for (i = 0; i <jsObject.list.length; i++){
-        if (jsObject.list[i].dt_txt.substring == "18:00:00" && d < row.length)
-        {let day = new Date(jsObject.list[i].dt_txt.substring);
-          day = day.getDay();
-          head[d].innerHTML = day[day];
-          
-        
-          var dailyt = jsObject.list[i].main.temp
-          document.getElementById("dailyt").textContent = jsObject.list[i].main.temp;
+      let day = 1;
 
-          let icon = "http://openweathermap.org/img/wn/10d@2x.png" + jsObject.list[i].weather[0].icon + ".png";
-          document.getElementById(icon).setAttribute("src",iconSrc);
-          
-          row[t].appendChild (icon);
-          row[t].appendChild (text);
+      jsObject.list.forEach (x=> {     
+        if (jsObject.list[i].dt_txt.includes("18:00:00"))
+        {
+        let dayNames = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+        let day = new Date (jsObject.list[i].dt_txt);
+        document.getElementById("day" + day + "-day").textContent = dayNames[day.getDay()];
 
-          d++;
+        document.getElementById("day" + day + "-temp").textContent = jsObject.list[i].main.temp.toFixed(0);
+
+        let icon = "http://openweathermap.org/img/wn/10d@2x.png" + jsObject.list[i].weather[0].icon + ".png";
+        let alt = jsObject.list[i].weather[0].description;
+        document.getElementById("day" + day + "-icon").setAttribute("src",iconSrc);
+        document.getElementById("day" + day + "-icon").setAttribute("alt",alt); 
+        //day++;
         }
-      }
+      })
     });
