@@ -42,7 +42,6 @@ fetch(forecastAPI)
         let alt = jsObject.list[i].weather[0].description;
         document.getElementById("day" + day + "-icon").setAttribute("src",iconSrc);
         document.getElementById("day" + day + "-icon").setAttribute("alt",alt); 
-        //day++;
         }
       })
     });
