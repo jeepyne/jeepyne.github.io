@@ -105,6 +105,8 @@ main{ padding: 2em;
     padding:20px;
     border: 2px #f9ebac;
     border-radius: 10px;
+    font-family:'Noto Sans SC', sans-serif;
+    color:#083047;
 }
 
 footer{color:#fcd574;
@@ -230,6 +232,8 @@ label {padding: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
+    font-family:'Noto Sans SC', sans-serif;
+    color:#083047;
 }
 .townie div {
     margin: auto;
@@ -246,9 +250,3 @@ label {padding: 5px;
 }
 
 .townie img {width: 100%;}
-
-
-/* Wireframes */
-
-.wireframes {max-width: 32.75%;
-grid-template-columns: 1fr 1fr 1fr;}
