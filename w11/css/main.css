@@ -232,19 +232,11 @@ label {padding: 5px;
     grid-gap: 5px;
     font-family:'Noto Sans SC', sans-serif;
     color:#083047;
-}
-.townie div {
-    margin: auto;
-    width: 350px;
+    padding: 1em;
+    background-color: white;
 }
 
 .townie>div {display: flex;}
 
-.towns {text-align: center;
-    padding: 20px;
-    background-color: white;
-    margin:20px 0px;
-    border-radius: 10px;
-}
 
-.townie img {width: 100%;}
+.townie img {width: 90%;}

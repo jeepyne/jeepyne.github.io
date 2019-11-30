@@ -41,7 +41,8 @@ fetch(forecastAPI)
         let icon = "http://openweathermap.org/img/wn/10d@2x.png" + jsObject.list[i].weather[0].icon + ".png";
         let alt = jsObject.list[i].weather[0].description;
         document.getElementById("day" + day + "-icon").setAttribute("src",iconSrc);
-        document.getElementById("day" + day + "-icon").setAttribute("alt",alt); 
+        document.getElementById("day" + day + "-icon").setAttribute("alt",alt);
+         
         }
       })
     });
