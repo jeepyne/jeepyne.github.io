@@ -14,14 +14,8 @@ fetch(eventsURL)
     let p4 = document.createElement('p');
 
     p1.textContent = towns[i].events;
-    p2.textContent = towns[i].events;
-    p3.textContent = towns[i].events;
-    p4.textContent = towns[i].events;
 
     card.appendChild(p1);
-    card.appendChild(p2);
-    card.appendChild(p3);
-    card.appendChild(p4);
 
     document.querySelector('div.local').appendChild(card);
     }
