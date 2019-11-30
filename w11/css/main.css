@@ -175,12 +175,10 @@ table, th, td {
 }
 
 /*contact information*/
-.call {font-size:.65em;
-    text-align: right;
-}
 
 .contact{display:inline-block;
     width: 100%;
+    font-size: .65em;
 }
 .contact img {width: 25%;
     float: left;
