@@ -11,6 +11,7 @@ fetch(requestURL)
     {
         if(towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven")
         {
+    let article = document.createElement("article");
     let section = document.createElement('section');
     let h3 = document.createElement('h3');
     let h4 = document.createElement('h4');
