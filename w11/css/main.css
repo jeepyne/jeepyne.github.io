@@ -182,7 +182,7 @@ table, th, td {
 }
 .contact img {width: 25%;
     float: left;
-    margin:25px
+    margin:15px
 }
 
 /* gallery page info */
@@ -235,9 +235,8 @@ label {padding: 5px;
     color:#083047;
     padding: 1em;
     background-color: white;
+    border-radius: 10px;
 }
-
-.townie>div {display: flex;}
 
 .townie img {width: 90%;}
 
@@ -246,4 +245,5 @@ label {padding: 5px;
 .local {justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    font-size: .75em;
 }
