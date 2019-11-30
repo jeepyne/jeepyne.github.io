@@ -170,22 +170,20 @@ table, th, td {
     padding: 10px;
     border-radius: 10px;}
 
-.article{font-size:1em;
+.article{font-size:.75em;
     font-family: 'Noto Sans SC', sans-serif;    
 }
 
 /*contact information*/
 
-.contact img {width: 25%;
+.contact img {width: 20%;
     float: left;
 }
 
-.contact {font-size:.6em;
+.call {font-size:.65em;
     text-align: right;
 }
-.right {display: flex;
-    flex: 1 1 auto;
-}
+
 /* gallery page info */
 
 figcaption {font-family: 'Lato', sans-serif;
