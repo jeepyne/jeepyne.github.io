@@ -175,13 +175,16 @@ table, th, td {
 }
 
 /*contact information*/
-
-.contact img {width: 20%;
-    float: left;
-}
-
 .call {font-size:.65em;
     text-align: right;
+}
+
+.contact{display:inline-block;
+    width: 100%;
+}
+.contact img {width: 25%;
+    float: left;
+    margin:25px
 }
 
 /* gallery page info */
@@ -237,6 +240,5 @@ label {padding: 5px;
 }
 
 .townie>div {display: flex;}
-
 
 .townie img {width: 90%;}
