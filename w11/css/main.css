@@ -73,7 +73,7 @@ font-family: 'Noto Sans SC', sans-serif;
 }
 
 nav li {flex: 1 1 100%;
-        padding: 10px;    
+        padding: 10px;   
 }
 nav li:first-child {display:none;}
 
@@ -81,8 +81,10 @@ nav li:hover {
         background-color: white;
         color:#1e8299;
 }
-.active {
+
+.navigation li.active {
         color: #f7c96f;
+        background-color:white;
 }
 
 body{
@@ -179,6 +181,7 @@ table, th, td {
 .contact{display:inline-block;
     width: 100%;
     font-size: .65em;
+    margin: auto;
 }
 .contact img {width: 25%;
     float: left;

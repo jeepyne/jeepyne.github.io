@@ -9,9 +9,6 @@ fetch(eventsURL)
     for (let i = 0; i < towns.length; i++ ) {
     let card = document.createElement('section');
     let p1 = document.createElement('p');
-    let p2 = document.createElement('p');
-    let p3 = document.createElement('p');
-    let p4 = document.createElement('p');
 
     p1.textContent = towns[i].events;
 
