@@ -19,7 +19,7 @@
 <body>
     <div id="pancakes"></div>
     <header>
-            <a href="index.html"></a><img class = "logo" src = "images/iconfinder_icon-8-cloud-sun-snow_315949.png"
+            <a href="index.html"><img class = "logo" src = "images/iconfinder_icon-8-cloud-sun-snow_315949.png"
             alt="Sun or Snow Logo"></a>
         <section class="headings">
         <h1>Sun or Snow</h1>
@@ -31,8 +31,8 @@
                 <li><a href="#" onclick="toggleMenu()">☰Menu</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
@@ -64,19 +64,26 @@
                     <h3>5 day Forecast</h3>
                 <table class="mesa">
                     <tr>
-                        <th class="head"></th>
-                        <th class="head"></th>
-                        <th class="head"></th>
-                        <th class="head"></th>
-                        <th class="head"></th>
+                        <th id="day1-day"></th>
+                        <th id="day2-day"></th>
+                        <th id="day3-day"></th>
+                        <th id="day4-day"></th>
+                        <th id="day5-day"></th>
                     </tr>
                     <tr>
-                        <td class="row"></td>
-                        <td class="row"></td>
-                        <td class="row"></td>
-                        <td class="row"></td>
-                        <td class="row"></td>
+                        <td id="day1-temp">&deg;F</td>
+                        <td id="day2-temp">&deg;F</td>
+                        <td id="day3-temp">&deg;F</td>
+                        <td id="day4-temp">&deg;F</td>
+                        <td id="day5-temp">&deg;F</td>
                     </tr>
+                    <tr>
+                        <td id="day1-icon"></td>
+                        <td id="day2-icon"></td>
+                        <td id="day3-icon"></td>
+                        <td id="day4-icon"></td>
+                        <td id="day5-icon"></td>
+                        </tr>
                     </table>
             </div> 
             
@@ -87,11 +94,14 @@
             </div>
             
             <div class="contentbox contact">
-                    <img src="images/map.jpg" alt="Idaho Map">
-                    <br>
-                    <p>Contact Information<br> 30 North 1st East <br> Preston, ID 83263<br> 555.555.5555<br>theweathersite@gmail.com
-                    </p>
-
+                    <div class="map">
+                            <img src="images/map.jpg" alt="Idaho Map">
+                    </div>
+                    <div class = "call">
+                            <p>Contact Information<br> 30 North 1st East <br> Preston, ID 83263<br> 555.555.5555<br>theweathersite@gmail.com
+                            </p>
+                    </div>
+                </div>
             </div>
         </section>
 </main>        
@@ -108,6 +118,7 @@
         <script src="js/currentdate.js"></script>
         <script src="js/webfontload.js"></script>
         <script src="js/weatherapi10.js"></script>
+        <script src="js/banner.js"></script>
     </footer>
         
     </body>
