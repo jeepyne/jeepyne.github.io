@@ -44,8 +44,8 @@ fetch(jsonURL)
           let icon = "http://openweathermap.org/img/wn/10d@2x.png" + jsObject.list[i].weather[0].icon + ".png";
           document.getElementById(icon).setAttribute("src",iconSrc);
           
-          row[t].appendChild (icon);
-          row[t].appendChild (text);
+          row[d].appendChild (icon);
+          row[d].appendChild (text);
 
           d++;
         }

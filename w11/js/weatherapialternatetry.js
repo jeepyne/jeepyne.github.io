@@ -25,41 +25,42 @@ const forecastAPI = "https://api.openweathermap.org/data/2.5/forecast?id=5604473
 
 const forecastAPI = "https://api.openweathermap.org/data/2.5/forecast?id==" + townID + "&units=imperial&APPID=4e16acb56e4905a6e4220f0853f8c0ca";
 
+
 fetch(forecastAPI)
-  .then((response) => response.json())
-  .then((jsObject) => {
-    
-    
-    
-   
-    let d = 0;
-    for (i = 0; i < jsObject.list.length; i++) {
-        if (jsObject.list[i].dt_txt.substring(11, 19) == "18:00:00" && x < tablerow.length) {
-          
-          d++;
-          
-          let dia = document.getElementsByClassName('dia' + d);
-          let tempic = document.getElementsByClassName('tempic' + d);
-          
-          day = day.getDay();
-          dia[x].innerHTML = daynames[day];
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+  
+    var dailyt = jsonObject ['dailyt'];
+    for (let i = 0; i < weather.length; i++ )
+    {
+        if(towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven")
+        {
+    let article = document.createElement("article");
+    let section = document.createElement('section');
+    let h3 = document.createElement('h3');
+    let h4 = document.createElement('h4');
+    let p1 = document.createElement('p');
+    let p2 = document.createElement('p');
+    let p3 = document.createElement('p');
+    let image = document.createElement('img');
 
-         
-            let text = document.createElement('p')
-            text.innerHTML = jsObject.list[i].main.temp + " &#176;F";
-      
-            let icon = jsObject.list[i].weather[0].icon;
-            let image = document.createElement('img');
-            let desc = jsObject.list[i].weather[0].description
+    h3.textContent = towns[i].name;
+    h4.textContent = towns[i].motto;
+    p1.textContent = 'Founded: ' + towns[i].yearFounded;
+    p2.textContent = 'Population: ' + towns[i].currentPopulation;
+    p3.textContent = 'Average Rainfall: ' + towns[i].averageRainfall + " inches";
+    image.setAttribute('src', "images/" + towns[i].photo);
+    image.setAttribute ('alt', towns[i].name + ' ' + ", Idaho");
 
-            image.setAttribute('src', "https://openweathermap.org/img/wn/" + icon + ".png");
-            image.setAttribute('alt', desc);
-                    
-            tempic[x].appendChild(image);
-            tempic[x].appendChild(text);
-     
+    section.appendChild(h3);
+    section.appendChild(h4);
+    section.appendChild(p1);
+    section.appendChild(p2);
+    section.appendChild(p3);
+    section.appendChild(image);
 
-
-        }
-      })
-    });
+    document.querySelector('div.forecastdiv').appendChild(section);
+    }
+}});
