@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&APPID=4e16acb56e4905a6e4220f0853f8c0ca";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=4e16acb56e4905a6e4220f0853f8c0ca";
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -20,4 +20,25 @@ fetch(apiURL)
     
     document.getElementById("windChill").innerHTML = chill;
     
+  });
+
+  const eventsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(eventsURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const towns = jsonObject ['towns'];
+    for (let i = 0; i < towns.length; i++ ) {
+      if (towns[i].name == "Soda Springs"){
+    let card = document.createElement('section');
+    let p1 = document.createElement('p');
+    
+    p1.textContent = towns[i].events;
+
+    card.appendChild(p1);
+
+    document.querySelector('div.sslocal').appendChild(card);
+    }}
   });
