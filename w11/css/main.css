@@ -174,8 +174,10 @@ footer{color:#fcd574;
     border-radius: 10px;}
 
 .article{font-size:.75em;
-    font-family: 'Noto Sans SC', sans-serif;    
+    font-family: 'Noto Sans SC', sans-serif;
 }
+
+#presto {font-size: 1.5em;}
 
 /*contact information*/
 

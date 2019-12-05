@@ -4,15 +4,16 @@ fetch(forecastAPI)
   .then((response) => response.json())
   .then((jsObject) => {
 
-      let count = 0;
+     
       var day = "";
-  for (i = 0; i < jsObject.list.length; i++){    
+      let count = 0;
+  for (let i = 0; i < jsObject.list.length; i++){    
         if (jsObject.list[i].dt_txt.includes("18:00:00"))
         {
         count++;
 
         // Day //
-        let newDay = "day"+ count;
+        let newDay = "day" + count;
         var d = new Date(jsObject.list[i].dt_txt);
         var n = d.getDay();
         if (n>6){(n=n-7);
@@ -36,8 +37,10 @@ fetch(forecastAPI)
         document.getElementById(newDay).textContent = day;
 
         //Temperature//
-        let tempfore = document.createElement("");
-        tempfore.innerhtml = jsObject.list[i].main.temp + "&#76;F";
+        var tempfore = jsObject.list[i].main.temp.toFixed(0);
+
+        let highfore = 'high' + count;
+        document.getElementById(highfore).textContent = tempfore;
 
         //Icon//
         let icon = jsObject.list[i].weather[0].icon;
