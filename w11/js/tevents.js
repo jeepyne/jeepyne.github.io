@@ -10,11 +10,11 @@ fetch(eventsURL)
     for (let i = 0; i < towns.length; i++ ) {
       if (towns[i].name == "Preston"){
     let card = document.createElement('section');
-    let p1 = document.createElement('p');
+    let p = document.createElement('p');
     
-    p1.textContent = towns[i].events;
+    p.textContent = towns[i].events;
 
-    card.appendChild(p1);
+    card.appendChild(p);
 
     document.querySelector('div.preston-local').appendChild(card);
     }}

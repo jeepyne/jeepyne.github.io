@@ -11,4 +11,6 @@
             max-width: 75%;
     }
     .towns img {max-width: 75%;}
+
+    #forecast {display: none;}
     }

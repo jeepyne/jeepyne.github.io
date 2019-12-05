@@ -4,39 +4,51 @@ fetch(forecastAPI)
   .then((response) => response.json())
   .then((jsObject) => {
 
-      let count = 0
-
+      let count = 0;
+      var day = "";
   for (i = 0; i < jsObject.list.length; i++){    
         if (jsObject.list[i].dt_txt.includes("18:00:00"))
         {
         count++;
 
-        let day = document.getElementById("day" + count);
-        let data = document.getElementById("data"+ count);
-        
-
         // Day //
-        let dayNames = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
-        let day = new Date();
-        let dayofWeek=day.getDay();
-        document.getElementById("day").textContent = dayNames[dayofWeek];
-        
+        let newDay = "day"+ count;
+        var d = new Date(jsObject.list[i].dt_txt);
+        var n = d.getDay();
+        if (n>6){(n=n-7);
+        }
+        if (n == 0){
+          day = "Sun";
+        } else if (n == 1) {
+          day = "Mon";
+        } else if (n == 2) {
+          day = "Tues";
+        } else if (n == 3) {
+          day = "Wed";
+        } else if (n == 4) {
+          day = "Thurs";
+        } else if (n == 5) {
+          day = "Fri";
+        } else if (n == 6) {
+          day = "Sat";
+        }
+  
+        document.getElementById(newDay).textContent = day;
+
         //Temperature//
-        let temp= document.createElement("p");
-        temp.innerHTML = jsObject.list[i].main.temp +"&#176;F";
+        let tempfore = document.createElement("");
+        tempfore.innerhtml = jsObject.list[i].main.temp + "&#76;F";
 
         //Icon//
         let icon = jsObject.list[i].weather[0].icon;
-        let image = document.createElement ("img");
+        let image = document.createElement("img");
         let desc = jsObject.list[i].weather[0].description;
-
-        image.setAttribute ("src", "https://openweathermap.org/img/wn/" + icon + ".png");
-        image.setAttribute ("alt", desc);
-
-        data.appendchild(image);
-        data.appendchild(temp);
-
-       
+        image.setAttribute("src", "https://openweathermap.org/img/wn/" + icon + ".png");
+        image.setAttribute('alt', desc);
+           
+        data[count].appendChild(image);
+        data[count].appendChild(tempfore);
+        
        
         }
       }

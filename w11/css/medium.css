@@ -14,4 +14,5 @@
     .townie article:nth-child(even) {
             flex-direction: row-reverse;
         }
+    #forecast {display: none;}
 }
