@@ -39,18 +39,16 @@ fetch(forecastAPI)
         //Temperature//
         var tempfore = jsObject.list[i].main.temp.toFixed(0);
 
-        let highfore = 'high' + count;
+        let highfore = 'data' + count;
         document.getElementById(highfore).textContent = tempfore;
 
         //Icon//
-        let icon = jsObject.list[i].weather[0].icon;
-        let image = document.createElement("img");
+        let image = jsObject.list[i].weather[0].icon;
+        let icon = document.createElement("icon"+ count);
         let desc = jsObject.list[i].weather[0].description;
-        image.setAttribute("src", "https://openweathermap.org/img/wn/" + icon + ".png");
-        image.setAttribute('alt', desc);
-           
-        data[count].appendChild(image);
-        data[count].appendChild(tempfore);
+
+        icon.setAttribute("src", "https://openweathermap.org/img/wn/" + icon + ".png");
+        icon.setAttribute('alt', desc);
         
        
         }

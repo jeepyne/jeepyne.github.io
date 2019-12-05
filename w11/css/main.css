@@ -177,8 +177,6 @@ footer{color:#fcd574;
     font-family: 'Noto Sans SC', sans-serif;
 }
 
-#presto {font-size: 1.5em;}
-
 /*contact information*/
 
 .contact{display:inline-block;
@@ -247,3 +245,15 @@ label {padding: 5px;
 .townie img {width: 90%;}
 
 #homeart {font-size: 1.25em;}
+
+/*forecast*/
+
+.forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 900px;
+    padding: 10px;
+}
