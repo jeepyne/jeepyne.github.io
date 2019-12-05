@@ -87,14 +87,13 @@ fetch(eventsURL)
           document.getElementById(highfore).textContent = tempfore;
   
           //Icon//
-          let image = jsObject.list[i].weather[0].icon;
-          let icon = document.createElement("icon"+ count);
-          let desc = jsObject.list[i].weather[0].description;
+          const imagesrc = "https://openweathermap.org/img/w/"+ jsObject.list[i].weather[0].icon + '.png';
+          const desc = jsObject.list[i].weather[0].description;
   
-          icon.setAttribute("src", "https://openweathermap.org/img/wn/" + icon + ".png");
-          icon.setAttribute('alt', desc);
-          
-         
+          let icon = "small" + count;
+          document.getElementById(icon).textContent = (imagesrc);
+          document.getElementById(icon).setAttribute("alt", desc);
+          document.getElementById(icon).setAttribute("src", imagesrc)
           }
         }
       });
