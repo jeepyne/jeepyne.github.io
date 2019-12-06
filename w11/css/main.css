@@ -83,11 +83,9 @@ nav li:hover {
         color:#1e8299;
 }
 
-nav li:active {
-        color: #083047;
-        background-color:white;
-}
 
+.active {color: #083047;
+    background-color:white;}
 
 body{
     background: #e3efea;
