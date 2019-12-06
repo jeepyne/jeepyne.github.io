@@ -91,13 +91,14 @@ const forecastAPI = "https://api.openweathermap.org/data/2.5/forecast?id=5585010
           document.getElementById(highfore).textContent = tempfore;
   
           //Icon//
-          const imagesrc = "https://openweathermap.org/img/w/"+ jsObject.list[i].weather[0].icon + '.png';
+          "https://openweathermap.org/img/w/";
+          const imagesrc = jsObject.list[i].weather[0].icon + '.png';
           const desc = jsObject.list[i].weather[0].description;
   
           let icon = "small" + count;
           document.getElementById(icon).textContent = (imagesrc);
           document.getElementById(icon).setAttribute("alt", desc);
-          document.getElementById(icon).setAttribute("src", imagesrc)
+          document.getElementById(icon).setAttribute("src", imagesrc);
          
           }
         }
