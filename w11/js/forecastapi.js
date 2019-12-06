@@ -43,14 +43,15 @@ fetch(forecastAPI)
         document.getElementById(highfore).textContent = tempfore;
 
         //Icon//
-        "https://openweathermap.org/img/w/";
-        const imagesrc = jsObject.list[i].weather[0].icon + '.png';
-        const desc = jsObject.list[i].weather[0].description;
-
+        
+        let imagesrc = jsObject.list[i].weather[0].icon + '.png';
+        let desc = jsObject.list[i].weather[0].description;
+        
         let icon = "small" + count;
+
         document.getElementById(icon).textContent = (imagesrc);
         document.getElementById(icon).setAttribute("alt", desc);
-        document.getElementById(icon).setAttribute("src", imagesrc);
+        document.getElementById(icon).setAttribute("src", "https://openweathermap.org/img/w/" + imagesrc);
         
         }
       }
