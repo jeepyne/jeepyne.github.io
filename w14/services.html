@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Page">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Home Page</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Grand+Hotel%7cMontserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+            <a href="index.html"><img class = "logo" src = "images/temple_inn_logo_blue-02.jpg"
+            alt="Temple Inn and Suites Logo">
+        </a>
+    </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">☰Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li class = "active"><a href="services.html">Services</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+<main>
+    <br>
+    <div class="spread">
+        <picture id = "hotelpic">
+            <img id="hotel" src="images/till_kitchen_banquet_large.jpg" alt="hotel room"
+                srcset="images/till_kitchen_banquet_large.jpg 1000w,
+                    images/till_kitchen_banquet_medium.jpg 700w,
+                    images/till_kitchen_banquet_small.jpg 400w"
+                sizes = "100vw"
+             >              
+        </picture>
+    </div>
+<div class="maincontent">
+    <ul>
+        <h3>Event Hall</h3>
+        <li>Food Service</li>
+        <li>Food prep kitchen</li>
+        <li>Tables</li>
+        <li>Chairs</li>
+        <li>Event vendor List</li>
+        <br>
+    </ul>
+    <h2>Gallery:</h2>
+    <div class = gallery>
+            <figure>
+                <img src = "images/workout_1.jpg" data-src="images/workout_1.jpg" alt="Workout Room">
+                <figcaption>Workout Room</figcaption>
+            </figure>
+            <figure>
+                <img src = "images/workout_1.jpg" data-src="images/hotel_pool.jpg" alt="Indoor Pool">
+                <figcaption>Indoor Pool</figcaption>
+            </figure>
+            <figure>
+                <img src = "images/workout_1.jpg" data-src="images/hotel_playroom.jpg" alt="Play Room">
+                <figcaption>Kids Play Room</figcaption>
+            </figure>
+            <figure>
+                <img src = "images/workout_1.jpg" data-src="images/best_breakfast.jpg" alt="Buffet Breakfast">
+                <figcaption>Buffet Breakfast</figcaption>
+            </figure>
+            <figure>
+                <img src = "images/workout_1.jpg" data-src="images/shuttle.jpg" alt="Temple Shuttle">
+                <figcaption>Temple Shuttle</figcaption>
+            </figure>
+            <figure>
+                <img src = "images/workout_1.jpg" data-src="images/lounge.jpg" alt="Reception Lounge">
+                <figcaption>Reception Lounge</figcaption>
+            </figure>
+            <figure>
+                <img src = "images/workout_1.jpg" data-src="images/breakfast_roost-2.jpg" alt="Breakfast Room">
+                <figcaption>Breakfast Room</figcaption>
+            </figure>
+            <figure>
+                <img src = "images/workout_1.jpg" data-src="images/LFHC-Interior-22-LR-920x650.jpg" alt="Family History Center">
+                <figcaption>Family History Center</figcaption>
+            </figure>
+            <figure>
+                <img src = "images/workout_1.jpg" data-src="images/till_kitchen_banquet.jpg" alt="Banquet Hall">
+                <figcaption>Banquet Hall</figcaption>
+            </figure>
+    </div>
+    <ul>
+        <h3>Missionary Accomodations</h3>
+        <li>Long-term rentals</li>
+        <li>One Bedroom</li>
+        <li>Kitchen</li>
+        <li>Family room</li>
+        <li>Bathroom</li>
+        <li>Furniture included</li>
+        <li>Use of Hotel Amenities included</li>
+        <li>Contact us for more information.</li>
+    </ul>
+    <h2>Gallery:</h2>
+    <div class = gallery>
+            <figure>
+                <img src = "images/m_king_suite.jpg" data-src="images/bathroom.jpg" alt="Missionary Bathroom">
+                <figcaption>Bathroom</figcaption>
+            </figure>
+            <figure>
+                <img src = "images/m_king_suite.jpg" data-src="images/king_suite.jpg" alt="Missionary Bedroom">
+                <figcaption>Bedoom</figcaption>
+            </figure>
+                <img src = "images/m_king_suite.jpg" data-src="images/suite_couches.jpg" alt="Missionary Couches">
+                <figcaption>Family Room</figcaption>
+            </figure>
+            <figure>
+                <img src = "images/m_king_suite.jpg" data-src="images/suite_table.jpg" alt="Missionary dining">
+                <figcaption>Dining</figcaption>
+            </figure>
+            <figure>
+                <img src = "images/m_king_suite.jpg" data-src="images/king_suite.jpg" alt="Bedroom">
+                <figcaption>Bedoom</figcaption>
+            </figure>
+            <figure>
+                <img src = "images/m_king_suite.jpg" data-src="images/m_kitchen.jpg" alt="Missionary Kitchen">
+                <figcaption>Kitchen</figcaption>
+            </figure>
+    </div>
+</div>   
+</main>        
+    <footer>
+        <p> &copy;2019 | Jessie Pyne | Georgia | <a href="https://www.byui.edu/online">BYU Idaho Online Learning</a> 
+            <br>
+            Last Modified: <span id="currentdate"></span>
+            <span id="date"></span><br>
+            <a href="https://jeepyne.github.io">Back To Home Page</a>
+        </p>
+        <script src="js/responsive.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/webfontload.js"></script>
+        <script src="js/homepage.js"></script>
+        <script src="js/lazy.js"></script>
+    </footer>
+        
+    </body>
+    </html>

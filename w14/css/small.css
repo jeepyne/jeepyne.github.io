@@ -1,0 +1,14 @@
+@media only screen and (max-width: 400px) {
+    main, footer{width:95%;
+                margin:auto;}
+
+    .navigation {flex-direction:column;}
+    .navigation li:first-child {display: block;}
+    .navigation li {display: none;}
+    .responsive li {display: block;} 
+
+    .hometemple{display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        max-width: 100%;}
+}

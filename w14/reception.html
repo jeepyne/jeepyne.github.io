@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Page">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Home Page</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Grand+Hotel%7cMontserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+            <a href="index.html"><img class = "logo" src = "images/temple_inn_logo_blue-02.jpg"
+            alt="Temple Inn and Suites Logo">
+        </a>
+    </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">☰Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li class = "active"><a href="services.html">Services</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+<main>
+    <br>
+    <div class="spread">
+        <picture id = "hotelpic">
+            <img id="hotel" src="images/home_page_image_large.jpg" alt="hotel room"
+                srcset="images/home_page_image_large.jpg 1000w,
+                        images/home_page_image_medium.jpg 700w,
+                        images/home_page_image_small.jpg 400w"
+                sizes = "100vw"
+             >              
+        </picture>
+    </div>
+<div class="maincontent">
+    <button class="button"
+            style="vertical-align:middle">
+            <span>Click Here to make a Reservation </span>
+    </button>
+    <br>
+    <div class="features">
+        <p>
+            Temple Inn and Suites has amenities for an overnight stay, a quick change of clothes, family fun, celebrating events, family history work, and missionary housing.
+            <br>
+            <ul>
+            <li>Breakfast</li>
+            <li>Exercise room</li>
+            <li>Indoor Pool</li>
+            <li>WiFi high-speed internet access and smart TVs</li>
+            <li>Parking</li>
+            <li>Temple shuttle</li>
+            <li>Family history consultation and family ordinance card service</li>
+            <li>Extended Stay Suites for Missionaries</li>
+            <li>Event center</li>
+            <li>Children's play area</li>
+        </ul>
+        </p>
+    </div>
+    <br>
+    <div class = hometemple>
+            <figure>
+                <img src = "images/atlanta_temple_lds.jpg" data-src="images/denver_colorado_temple_medium.jpg" alt="Denver, Colorado Temple">
+                <figcaption>Denver, CO Temple</figcaption>
+            </figure>
+    </div>
+<br>
+    <div class="contact">
+             <p><em><strong>Contact Information:</strong></em><br> 4800 Montgomery Ln #300 <br> Bethesda, MD 20814
+            <br> 555.555.5555<br>templeinnandsuites@gmail.com
+            </p>
+        </div>
+</div>   
+</main>        
+    <footer>
+        <p> &copy;2019 | Jessie Pyne | Georgia | <a href="https://www.byui.edu/online">BYU Idaho Online Learning</a> 
+            <br>
+            Last Modified: <span id="currentdate"></span>
+            <span id="date"></span><br>
+            <a href="https://jeepyne.github.io">Back To Home Page</a>
+        </p>
+        <script src="js/responsive.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/webfontload.js"></script>
+        <script src="js/homepage.js"></script>
+        <script src="js/lazy.js"></script>
+    </footer>
+        
+    </body>
+    </html>
