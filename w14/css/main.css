@@ -29,7 +29,8 @@ h2,h3,h4 {text-align: left;}
     color: white;
 }
 
-main {font-size:100%vw}
+main {max-width: 100%;}
+
 /*Header & footer*/
 header {justify-content: center;
     display: flex;
@@ -218,5 +219,4 @@ form {line-height: 2.5;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
-    max-width: 2000px;
 }
