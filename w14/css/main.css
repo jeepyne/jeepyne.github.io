@@ -137,6 +137,11 @@ img[data-src]{
     max-width: 2000px;
 }
 
+#templequote{text-align: center;
+    margin: 20px;
+    padding: 25px;
+}
+
 /*reservation page*/
 .reserve {display: flex;
     justify-content: center;
