@@ -69,7 +69,7 @@
 
 <!--Temple/ Hotel Location-->
 <label>*Location:
-</label>
+
 <select name="location" required>
     <option selected disabled>Select Location</option>
     <option value="Denver, CO">Denver, CO</option>
@@ -77,19 +77,21 @@
     <option value="Nashville, TN">Nashville, TN</option>
     <option value="Atlanta, GA">Atlanta, GA</option>
 </select>
+</label>
 <br>
 <!--Room number-->
 <label>*Number of Rooms:<br>
-    </label>
+    
 <input type="radio" name="rooms" value="1"> 1<br>
 <input type="radio" name="rooms" value="2"> 2<br>
 <input type="radio" name="rooms" value="3"> 3<br>
 <input type="radio" name="rooms" value="4"> 4 <br>
 (Please contact us to reserve more than 4 rooms.)
+</label>
 <br>
 <!--Room Selection-->
 <label>*Room Type:<br>
-</label>
+
     <select name="roomtype" required>
         <option selected disabled>Select room type:</option>
         <option value="King">One King Bed</option>
@@ -97,10 +99,12 @@
         <option value="Family Suite">Family Suite</option>
         <option value="Honeymoon Suite">Honeymoon Suite</option>
     </select>
+</label>
 <br>
 <!--Comments-->
-Additional Comments:<br>
+<label>Additional Comments:<br>
 <textarea rows="5" cols="25"></textarea><br>
+</label>
 <br>
 <!--Form Submission-->
 <input class= ssr type="submit" value="Submit Information">
