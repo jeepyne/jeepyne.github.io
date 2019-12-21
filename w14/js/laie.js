@@ -5,8 +5,8 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
 
-    document.getElementById('currently4').textContent = jsObject.weather[0].description;
-    document.getElementById('current-temp4').textContent = jsObject.main.temp;
-    document.getElementById('humidity4').textContent = jsObject.main.humidity;
-    document.getElementById('windspeed4').textContent = jsObject.wind.speed;
+    document.getElementById('currently-4').textContent = jsObject.weather[0].description;
+    document.getElementById('current-temp-4').textContent = jsObject.main.temp;
+    document.getElementById('humidity-4').textContent = jsObject.main.humidity;
+    document.getElementById('windspeed-4').textContent = jsObject.wind.speed;
   });
