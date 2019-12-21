@@ -29,6 +29,7 @@ h2,h3,h4 {text-align: left;}
     color: white;
 }
 
+main {font-size:100%vw}
 /*Header & footer*/
 header {justify-content: center;
     display: flex;
@@ -47,9 +48,10 @@ a {color:#4e5632;
 }
 
 /*Nav*/
-nav{display:block;
-    background-color:white;
+nav{background-color:white;
     }
+nav{display:block;
+}
 
 nav ul{display:flex;
 list-style-type: none;
@@ -137,9 +139,19 @@ img[data-src]{
     max-width: 2000px;
 }
 
-#templequote{text-align: center;
+#templequote{
+    text-align: center;
     margin: 20px;
     padding: 25px;
+}
+
+.hometemple{display: inline-block;
+    width: 100%;
+    margin: auto;
+}
+.hometemple img {float: left;
+    margin: 15px;
+    padding: 5px 25px 5px 5px;
 }
 
 /*reservation page*/
@@ -194,3 +206,17 @@ form {line-height: 2.5;
     justify-content: center;
 }
 .contact {display: flex;}
+
+/*temples page*/
+.attend {
+    border: 5px solid #4e5632;
+    padding: 15px;
+    margin: 5px;
+}
+
+.templepage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 2000px;
+}

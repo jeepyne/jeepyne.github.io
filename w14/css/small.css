@@ -14,4 +14,18 @@
     
     .googlemap {display:none;}
 
+    .templepage {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #templequote{display: none;}
+
+    .features{display: none;}
+
+    .button{width:100%;}
 }

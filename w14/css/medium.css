@@ -3,7 +3,23 @@
                 margin:auto;}
     
     .hometemple{display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         margin: auto;
         max-width: 100%;}
+
+    .templepage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .button{width:100%;}
     }
