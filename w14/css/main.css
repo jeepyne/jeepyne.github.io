@@ -10,10 +10,12 @@ h1,h2,h3{font-family: 'Grand Hotel', cursive;
         color:#182f3f;
         margin: auto;
         font-weight:normal;
-        text-align:center;
         padding: 10px;
         font-size: 2em;
     }
+h1 {text-align: center;}
+h2,h3,h4 {text-align: left;}
+
 .maincontent {
     padding: 2em;
 }
@@ -114,11 +116,6 @@ nav li:hover {
     right: 0;}
 
 /*homepage specific*/
-.hometemple{display: grid;
-    grid-template-columns: 1fr;
-    width:100%;
-    }
-
 img[data-src]{
     filter:blur(.5em);
     }
@@ -133,11 +130,19 @@ img[data-src]{
 #hotelpic{width: 100%;
 }
 
+#icons{display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin: auto;
+    max-width: 2000px;
+}
+
 /*reservation page*/
 .reserve {display: flex;
     justify-content: center;
     margin: auto;
     padding: 25px;
+    align-items: center;
 }
 
 form {line-height: 2.5;
@@ -172,9 +177,15 @@ form {line-height: 2.5;
 }
 
 /*contact page*/
- #outside {max-width: 25%;
+ #outside {
     display: flex;
     justify-content: center;
     padding:20px;
     margin: auto;
+    width: 400px;
 }
+.googlemap {
+    display: flex;
+    justify-content: center;
+}
+.contact {display: flex;}

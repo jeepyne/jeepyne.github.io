@@ -60,17 +60,19 @@
         <li>Utensils</li>
         <li>Table linens</li>
         <li>Event vendor List</li>
+        <li>Options available for catering.</li>
         <li>This room can accomodate 80 guests for a sit down dinner, or 125 guests for a reception.</li>
         <br>
         <h2>Please let us know if you have any questions.<br> We look forward to hearing from you.</h2>
     </ul>
     <ul>
         <h3>Other Services:</h3>
-        <li>Short-term babysitting available in kids play room.</li>
+        <li>Short-term, low cost, babysitting available in kids play room.</li>
         <li>Shuttle Service to and from Temple.</li>
-        <li>Family History Center with computers and Consultants.</li>
+        <li>Family History Center with computers and consultants to support temple ordinances.</li>
+        <li>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes.</li>
     </ul>
-    <h2>Gallery:</h2>
+    <h1>Gallery:</h1>
     <div class = gallery>
             <figure>
                 <img src = "images/shuttle.jpg" data-src="images/hotel_playroom.jpg" alt="Play Room">
@@ -90,7 +92,7 @@
             </figure>
             <figure>
                 <img src = "images/shuttle.jpg" data-src="images/family_pics.jpg" alt="Family History">
-                <figcaption>Family History Consultation and Cards</figcaption>
+                <figcaption>Family History Consultations</figcaption>
             </figure>
             <figure>
                 <img src = "images/shuttle.jpg" data-src="images/till_kitchen_banquet.jpg" alt="Banquet Hall">
@@ -127,12 +129,40 @@
         <li>One Bedroom</li>
         <li>Kitchen</li>
         <li>Family room</li>
-        <li>Bathroom</li>
-        <li>Furniture included</li>
+        <li>One bathroom</li>
+        <li>Furniture, linens, and kitchen utensils included</li>
         <li>Use of Hotel Amenities included</li>
-        <li>Please contact us for more information.</li>
+        <li>Please see below for images of our missionary suites.</li>
+        <li>Please let us know if you would like additional information regarding our missionary suites.</li>
     </ul>
-    <h2>Gallery:</h2>
+        <form action="thanks.html" method="get">
+                <fieldset>
+                    <h4>Please Enter Your Contact Information:</h4>
+                    <!--Name-->    
+                    <label> *Name: <input type="text" name="firstandlast" value="" minlength="5" required pattern="[A-Za-z ]{5,}"><br>
+                    </label>
+                        
+                    <!--email-->
+                    <label>*Email: <input type="email" name="email" placeholder="user@email.com" pattern="[a-z0-9._%=-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    </label>
+                    <br>
+                        
+                    <!--phone number-->
+                    <label>*Phone: <input type="tel" name="phone" required>
+                    </label><br>
+            
+                    <!--Comments-->
+                    Questions or Comments:<br>
+                    <textarea rows="5" cols="25"></textarea><br>
+        
+                    <!--Form Submission-->
+                    <input class= ssr type="submit" value="Submit Information">
+                    <br>
+                    We will get back to you as soon as possible.
+                </fieldset>
+                </form>
+   
+    <h1>Temple Missionary Suites Gallery:</h1>
     <div class = gallery>
             <figure>
                 <img src = "images/m_king_suite.jpg" data-src="images/bathroom.jpg" alt="Missionary Bathroom">
@@ -171,7 +201,8 @@
             <br>
             Last Modified: <span id="currentdate"></span>
             <span id="date"></span><br>
-            <a href="https://jeepyne.github.io">Back To Home Page</a>
+            <a href="https://jeepyne.github.io">Back To Home Page</a><br>
+            <a href="references.html">PAGE REFERENCES</a>
         </p>
         <script src="js/responsive.js"></script>
         <script src="js/currentdate.js"></script>

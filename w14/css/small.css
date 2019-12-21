@@ -11,4 +11,7 @@
         grid-template-columns: 1fr;
         margin: auto;
         max-width: 100%;}
+    
+    .googlemap {display:none;}
+
 }
