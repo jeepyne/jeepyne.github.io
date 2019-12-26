@@ -1,7 +1,7 @@
 //Atlanta Weather Summary//
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?zip=30328&units=imperial&APPID=4e16acb56e4905a6e4220f0853f8c0ca";
+const getURL = "https://api.openweathermap.org/data/2.5/weather?zip=30328&units=imperial&APPID=4e16acb56e4905a6e4220f0853f8c0ca";
 
-fetch(apiURL)
+fetch(getURL)
   .then((response) => response.json())
   .then((jsObject) => {
 
